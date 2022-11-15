@@ -7,10 +7,10 @@ namespace PostgresCrudOperations.Repositories
 {
     public class DapperAdditionalDbOperations : IAdditionalDbOperations
     {
-        private const string CONNECTION_STRING = "Host=localhost:5455;" +
-                   "Username=postgresUser;" +
-                   "Password=postgresPW;" +
-                   "Database=postgresDB";
+        private const string CONNECTION_STRING = "Host=localhost:5432;" +
+                   "Username=postgres;" +
+                   "Password=postgres;" +
+                   "Database=juegos";
 
         private const string TABLE_NAME = "Games";
         private readonly NpgsqlConnection connection;
@@ -46,10 +46,10 @@ namespace PostgresCrudOperations.Repositories
 
     public class DapperBoardGameRepository : IBoardGameRepository
     {
-        private const string CONNECTION_STRING = "Host=localhost:5455;" +
-                    "Username=postgresUser;" +
-                    "Password=postgresPW;" +
-                    "Database=postgresDB";
+        private const string CONNECTION_STRING = "Host=localhost:5432;" +
+                    "Username=postgres;" +
+                    "Password=postgres;" +
+                    "Database=juegos";
 
         private const string TABLE_NAME = "Games";
         private readonly NpgsqlConnection connection;

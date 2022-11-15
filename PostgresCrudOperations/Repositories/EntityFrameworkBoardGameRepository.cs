@@ -6,10 +6,10 @@ namespace PostgresCrudOperations.Repositories
 {
     public class BoardGamesContext : DbContext
     {
-        private const string CONNECTION_STRING = "Host=localhost;Port=5455;" +
-                 "Username=postgresUser;" +
-                 "Password=postgresPW;" +
-                 "Database=postgresDB";
+        private const string CONNECTION_STRING = "Host=localhost:5432;" + 
+            "Username=postgres;" + 
+            "Password=postgres;" + 
+            "Database=juegos";
 
         public DbSet<BoardGame> Games { get; set; }
 

@@ -7,10 +7,10 @@ namespace PostgresCrudOperations.Repositories
 {
     public class NpgsqlAdditionalDbOperations : IAdditionalDbOperations
     {
-        private const string CONNECTION_STRING = "Host=localhost:5455;" +
-          "Username=postgresUser;" +
-          "Password=postgresPW;" +
-          "Database=postgresDB";
+        private const string CONNECTION_STRING = "Host=localhost:5432;" +
+          "Username=postgres;" +
+          "Password=postgres;" +
+          "Database=juegos";
 
         private const string TABLE_NAME = "Games";
 
@@ -53,10 +53,10 @@ namespace PostgresCrudOperations.Repositories
 
     public class NpgsqlBoardGameRepository : IBoardGameRepository
     {
-        private const string CONNECTION_STRING = "Host=localhost:5455;" +
-            "Username=postgresUser;" +
-            "Password=postgresPW;" +
-            "Database=postgresDB";
+        private const string CONNECTION_STRING = "Host=localhost:5432;" + 
+            "Username=postgres;" + 
+            "Password=postgres;" + 
+            "Database=juegos";
 
         private const string TABLE_NAME = "Games";
 
