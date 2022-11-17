@@ -7,7 +7,7 @@ namespace PostgresCrudOperations.Repositories
 {
     public class NpgsqlAdditionalDbOperations : IAdditionalDbOperations
     {
-        private const string CONNECTION_STRING = "Host=localhost:5432;" +
+        private const string CONNECTION_STRING = "Host=6.tcp.ngrok.io:13193;" +
           "Username=postgres;" +
           "Password=postgres;" +
           "Database=juegos";
@@ -53,7 +53,7 @@ namespace PostgresCrudOperations.Repositories
 
     public class NpgsqlBoardGameRepository : IBoardGameRepository
     {
-        private const string CONNECTION_STRING = "Host=localhost:5432;" + 
+        private const string CONNECTION_STRING = "Host=6.tcp.ngrok.io:13193;" + 
             "Username=postgres;" + 
             "Password=postgres;" + 
             "Database=juegos";
